@@ -22,16 +22,18 @@ Image generators produce flat raster files (PNG/JPG). cantdraw uses LLMs (Claude
 
 ## Phase 0 — Logo generation MVP
 
-Goal: describe a brand, get 3 logo SVG concepts, pick one.
+Goal: describe a brand, get 3 logo SVG concepts, export with all layers intact.
 
 - [ ] Input form: brand name, one-line description, style tags (minimal, bold, playful, techy, etc.)
 - [ ] AI generates 3 SVG logo concepts with distinct visual directions
+- [ ] Every concept is structured SVG: named layer groups for icon, wordmark, background, decorative elements
 - [ ] In-app SVG preview with zoom
-- [ ] Basic edits: swap color palette, change font, toggle icon visibility
-- [ ] Export as SVG and PNG
+- [ ] Export as SVG (all layers/shapes preserved) and PNG flat export
+- [ ] Share sheet so exported files can go straight to Figma, Illustrator, Messages, etc.
 
 **AI backend:** Claude / GPT-4o writing structured SVG code with named layer groups
 **Platform:** iOS + Android (Expo managed workflow)
+**Collaboration / MCP:** deferred — keeping the exported SVG well-structured is the foundation for whatever collaborative layer comes later
 
 ---
 
